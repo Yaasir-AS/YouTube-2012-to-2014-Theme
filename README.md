@@ -2,6 +2,8 @@
 
 Makes YouTube's layout look like what it was between December 2012 and February 2014
 
+Requires Rehike by the way.
+
 ## Some Images to give you an idea
 
 ### Eras
