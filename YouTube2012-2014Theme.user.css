@@ -610,7 +610,8 @@ body {
 /* Channel Contents *\/
 
 .branded-page-v2-primary-col {
-	width: 657px;
+	width: 615px;
+	border: none !important;
 }
 
 branded-page-related-channels{
