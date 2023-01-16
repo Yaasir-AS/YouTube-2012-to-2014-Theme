@@ -604,14 +604,13 @@ body {
 
 .branded-page-v2-col-container {
 	width: 850px;
-	background: url(//web.archive.org/web/20130115062113im_/http://s.ytimg.com/yts/img/channels/c3/bg-layout-2col-ltr-vflzXzuyp.png) repeat-y #ccc;
+	background: url(http://s.ytimg.com/yts/img/channels/c3/bg-layout-2col-ltr-vflzXzuyp.png) repeat-y #ccc;
 }
 
 /* Channel Contents *\/
 
 .branded-page-v2-primary-col {
 	width: 615px;
-	border: none !important;
 }
 
 branded-page-related-channels{
@@ -627,6 +626,7 @@ branded-page-related-channels{
 }
 .yt-card {
     background: none;
+    border: none !important;
 }
 
 .yt-ui-ellipsis {
