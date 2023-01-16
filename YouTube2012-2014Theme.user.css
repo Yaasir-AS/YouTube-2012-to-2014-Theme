@@ -4,7 +4,7 @@
 @version        1.2
 @description    `Makes YouTube look like it did in late-2012
 
-Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
+Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least ;)`
 @author         yaasir ahmad-sanni (naadir500)
 @license        CC0-1.0
 @advanced text username "YT Username to add accuracy" "Default User"
@@ -574,6 +574,166 @@ button#action-panel-overflow-button{
 EOT;
 }
 
+@advanced dropdown channels_3-0 "(Experimental) Recreation of Channels 3.0" {
+0 "Disabled*" <<<EOT
+EOT;
+
+1 "Enabled" <<<EOT
+/* Setup *\/
+
+#guide {
+	display: none;
+}
+
+#appbar-guide-button {
+    visibility: hidden;
+}
+
+#content {
+	top: inherit !important;
+	left: inherit !important;
+}
+
+/* Header *\/
+
+#c4-primary-header-contents {
+	background: url(http://s.ytimg.com/yts/img/channels/c3/bg-channel-header-vfl6TeHdT.png) repeat-x;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.channel-header .branded-page-header-title {
+	float: right;
+}
+
+.primary-header-upper-section-block {
+	float: left;
+}
+
+.primary-header-upper-section-wrapper {
+	padding: 0px 0px 0px 85px;
+}
+
+/* Subheader *\/
+
+#channel-subheader {
+    background-image: linear-gradient(to top, #323232 0,#4f4f4f 70%);
+    display: flex;
+	justify-content: space-around;
+    height: 34px;
+}
+
+.branded-page-gutter-padding {
+	padding: 0px;
+}
+
+.channel-header .branded-page-header-title .branded-page-header-title-link {
+	color: #fff;
+}
+
+.channel-header-profile-image-container {
+	top: 153px;
+	left: 7px;
+	z-index: 1000000000;
+	background: none;
+	width: 60px;
+	height: 60px;
+}
+
+.channel-header-profile-image {
+	width: 60px;
+	height: 60px;
+}
+
+#channel-subheader li {
+	margin-left: 0px;
+}
+
+/* Search Bar *\/
+
+#channel-search .show-search {
+	display: none;
+}
+
+#channel-search .search-form {
+	visibility: visible;
+	padding-left: 75px !important;
+	padding-right: 5px;
+}
+
+#channel-search .search-field {
+    width: 260px;
+    background: #333;
+	height: 15px;
+	font-size: 12px;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #626262;
+	padding: 4px 0 4px 10px;
+	color: #fff;;
+	box-shadow: inset 0px 2px 3px #151515;
+    border-radius: 3px;
+}
+
+.search-form.epic-nav-item:hover{
+    border-bottom: none;
+}
+
+/* Removal of the Banner *\/
+
+#c4-header-bg-container {
+	background: none;
+    box-shadow: none;
+}
+
+#gh-banner {
+	border: none;
+	box-shadow: none;
+	background: none;
+	height: 143px;
+}
+
+.branded-page-v2-header.channel-header.yt-card {
+	border: none;
+}
+
+/* Subheader Buttons *\/
+
+ul#channel-navigation-menu li a span{
+    font-size: 14px;
+}
+
+ul#channel-navigation-menu li a.yt-uix-button.spf-link.selected {
+    border: none;
+    background: linear-gradient(to bottom,#323232 0,#1c1c1c 70%);
+    text-align: center;
+    height: 31px;
+    color: #eaeaea !important;
+}
+
+a.yt-uix-button-epic-nav-item {
+	height: 31px;
+    width: 98px;
+    padding: unset !important;
+    text-align: center;
+    color: #eaeaea !important;
+    font-size: 14px;
+}
+
+a.yt-uix-button-epic-nav-item:hover {
+    background: linear-gradient(to top,#3a3a3a 0,#555 70%);
+    box-shadow: 0 1px 2px rgb(34,34,34);
+    height: 31px;
+	border: none;
+}
+
+#channel-subheader li {
+	float: left;
+	height: 30px;
+    border: none;
+}
+EOT;
+}
+
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
     #masthead-search {
@@ -1034,6 +1194,9 @@ EOT;
 }
 
 @-moz-document regexp("http*.://.*.youtube.com/user/.*") {
+    
+    /*[[channels_3-0]]*/
+    
     .yt-uix-button.yt-uix-button-subscribe-branded,
     .yt-uix-button.yt-uix-button-subscribed-branded {
         padding: 0 23px 0 12px;
@@ -1067,8 +1230,8 @@ EOT;
         margin-top: 0px;
     }
     #content {
-        top: 10px !important;
-        left: -63px !important;
+        top: 10px;
+        left: -63px;
     }
     .exp-invert-logo a.yt-uix-button-epic-nav-item:hover,
     .exp-invert-logo a.yt-uix-button-epic-nav-item.selected,
@@ -1089,8 +1252,12 @@ EOT;
         opacity: 0;
     }
 }
+
 
 @-moz-document regexp("http*.://.*.youtube.com/channel/.*") {
+    
+    /*[[channels_3-0]]*/
+    
     .yt-uix-button.yt-uix-button-subscribe-branded,
     .yt-uix-button.yt-uix-button-subscribed-branded {
         padding: 0 23px 0 12px;
@@ -1124,8 +1291,8 @@ EOT;
         margin-top: 0px;
     }
     #content {
-        top: 0px !important;
-        left: -63px !important;
+        top: 0px;
+        left: -63px;
     }
     .exp-invert-logo a.yt-uix-button-epic-nav-item:hover,
     .exp-invert-logo a.yt-uix-button-epic-nav-item.selected,
@@ -1147,6 +1314,11 @@ EOT;
     }
 }
 
+@-moz-document regexp("http*.://.*.youtube.com/@.*") {
+    
+    /*[[channels_3-0]]*/
+    
+}
 @-moz-document regexp("http*.://.*.youtube.com/watch.*") {
     .comment-renderer-reply::after {
         content: "\002022";
@@ -1407,5 +1579,13 @@ EOT;
         #watch8-secondary-actions {
             left: 655px !important;
         }
+    }
+    
+    #watch-action-panels {
+        position: absolute;
+        background: white;
+        z-index: 100000000;
+        width: 40rem;
+        border-top: 1px solid #eee;
     }
 }
