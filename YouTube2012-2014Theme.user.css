@@ -4,7 +4,7 @@
 @version        1.2
 @description    `Makes YouTube look like it did in late-2012
 
-Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least ;)`
+Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
 @author         yaasir ahmad-sanni (naadir500)
 @license        CC0-1.0
 @advanced text username "YT Username to add accuracy" "Default User"
@@ -594,6 +594,48 @@ EOT;
 	left: inherit !important;
 }
 
+/* Channel Background *\/
+
+body {
+	background: #c4c4c4;
+}
+
+/* Channel Foreground*\/
+
+.branded-page-v2-col-container {
+	width: 850px;
+	background: url(//web.archive.org/web/20130115062113im_/http://s.ytimg.com/yts/img/channels/c3/bg-layout-2col-ltr-vflzXzuyp.png) repeat-y #ccc;
+}
+
+/* Channel Contents *\/
+
+.branded-page-v2-primary-col {
+	width: 657px;
+}
+
+branded-page-related-channels{
+    width: 100px;
+}
+
+.branded-page-v2-secondary-col {
+	width: 193px;
+}
+
+.branded-page-v2-primary-col .branded-page-box, .section-list li .item-section .branded-page-box {
+    border-bottom: none;
+}
+.yt-card {
+    background: none;
+}
+
+.yt-ui-ellipsis {
+	background-color: #0000;
+}
+
+.yt-uix-expander-ellipsis {
+	background-color: #0000;
+}
+
 /* Header *\/
 
 #c4-primary-header-contents {
@@ -675,7 +717,7 @@ EOT;
 }
 
 .search-form.epic-nav-item:hover{
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
 /* Removal of the Banner *\/
@@ -694,6 +736,7 @@ EOT;
 
 .branded-page-v2-header.channel-header.yt-card {
 	border: none;
+	background: none;
 }
 
 /* Subheader Buttons *\/
@@ -723,7 +766,7 @@ a.yt-uix-button-epic-nav-item:hover {
     background: linear-gradient(to top,#3a3a3a 0,#555 70%);
     box-shadow: 0 1px 2px rgb(34,34,34);
     height: 31px;
-	border: none;
+	border: none !important;
 }
 
 #channel-subheader li {
