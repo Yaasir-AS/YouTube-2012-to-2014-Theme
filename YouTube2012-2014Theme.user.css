@@ -699,22 +699,22 @@ branded-page-related-channels{
 
 #channel-search .search-form {
 	visibility: visible;
-	padding-left: 75px !important;
+	padding-left: 25px !important;
 	padding-right: 5px;
 }
 
 #channel-search .search-field {
-    width: 260px;
-    background: #333;
+	width: 214px;
+	background: #333;
 	height: 15px;
 	font-size: 12px;
 	outline: none;
 	border: 0;
 	border-bottom: 1px solid #626262;
 	padding: 4px 0 4px 10px;
-	color: #fff;;
+	color: #fff;
 	box-shadow: inset 0px 2px 3px #151515;
-    border-radius: 3px;
+	border-radius: 3px;
 }
 
 .search-form.epic-nav-item:hover{
@@ -775,7 +775,19 @@ a.yt-uix-button-epic-nav-item:hover {
 	height: 30px;
     border: none;
 }
+
+#header-links {
+	z-index: 10;
+	top: 11rem;
+}
+
+.yt-card.clearfix {
+    width: 656px;
+}
+
 EOT;
+}
+
 }
 
 ==/UserStyle== */
@@ -1237,6 +1249,14 @@ EOT;
     }
 }
 
+@-moz-document regexp("http*.://.*.youtube.com/user/.*./videos"), regexp("http*.://.*.youtube.com/channel/.*./videos"), regexp("http*.://.*.youtube.com/@.*./videos"), regexp("http*.://.*.youtube.com/user/.*./playlists"), regexp("http*.://.*.youtube.com/channel/.*./playlists"), regexp("http*.://.*.youtube.com/@.*./playlists"), regexp("http*.://.*.youtube.com/user/.*./channels"), regexp("http*.://.*.youtube.com/channel/.*./channels"), regexp("http*.://.*.youtube.com/@.*/channels") {
+    /*[[separate-option]]*/
+    /* .yt-card.clearfix {
+        width: 656px;
+        padding: 12px;
+    } */
+}
+
 @-moz-document regexp("http*.://.*.youtube.com/user/.*") {
     
     /*[[channels_3-0]]*/
@@ -1361,6 +1381,61 @@ EOT;
 @-moz-document regexp("http*.://.*.youtube.com/@.*") {
     
     /*[[channels_3-0]]*/
+    
+        .yt-uix-button.yt-uix-button-subscribe-branded,
+    .yt-uix-button.yt-uix-button-subscribed-branded {
+        padding: 0 23px 0 12px;
+    }
+    .yt-uix-button-subscribe-branded .yt-uix-button-content,
+    .yt-uix-button-subscribed-branded .yt-uix-button-content {
+        font-weight: bold;
+    }
+    #c4-header-bg-container.has-custom-banner .hd-banner-image {
+        background-size: cover;
+    }
+    .content-snap-width-3 .flex-width-enabled-snap .not-fixed-width-tab-widescreen #c4-header-bg-container {
+        height: 175px;
+    }
+    .channel-header .about-channel-link-text {
+        font-weight: bold;
+    }
+    .branded-page-v2-col-container {
+        margin-top: -10px;
+    }
+    .yt-uix-button-subscribe-branded .yt-uix-button-content,
+    .yt-uix-button-subscribed-branded .yt-uix-button-content {
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .branded-page-related-channels.branded-page-box.yt-card {
+        background: transparent;
+        border: 0px;
+    }
+    .branded-page-v2-has-top-row .branded-page-v2-secondary-col .branded-page-box:last-child {
+        margin-top: 0px;
+    }
+    #content {
+        top: 0px;
+        left: -63px;
+    }
+    .exp-invert-logo a.yt-uix-button-epic-nav-item:hover,
+    .exp-invert-logo a.yt-uix-button-epic-nav-item.selected,
+    .exp-invert-logo a.yt-uix-button-epic-nav-item.yt-uix-button-toggled,
+    .exp-invert-logo a.yt-uix-button-epic-nav-item.partially-selected,
+    .exp-invert-logo a.yt-uix-button-epic-nav-item.partially-selected:hover,
+    .exp-invert-logo button.yt-uix-button-epic-nav-item:hover,
+    .exp-invert-logo button.yt-uix-button-epic-nav-item.selected,
+    .exp-invert-logo button.yt-uix-button-epic-nav-item.yt-uix-button-toggled,
+    .exp-invert-logo .epic-nav-item:hover,
+    .exp-invert-logo .epic-nav-item.selected,
+    .exp-invert-logo .epic-nav-item.yt-uix-button-toggled,
+    .exp-invert-logo .epic-nav-item-heading,
+    .exp-invert-logo .yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before {
+        border-bottom: 3px solid #cc181e;
+    }
+    #appbar-guide-button[aria-expanded="true"] {
+        opacity: 0;
+    }
     
 }
 @-moz-document regexp("http*.://.*.youtube.com/watch.*") {
