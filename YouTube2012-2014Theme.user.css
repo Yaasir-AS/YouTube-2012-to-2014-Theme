@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.2
+@version        1.2.1
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
@@ -11,163 +11,184 @@ Requires Rehike to function as this was built on YouTube's Hitchhiker layout, wh
 @advanced dropdown December_2012_to_July_2013-July_2013_to_Feburary_2014 "Which iteration of this layout?" {
 0 "December 2012 to July 2013 (Gradient heavy, different subscribe button)*" <<<EOT
 
-   .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
-	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
-	background-size: auto !important;
-	background-position: -20px -234px !important;
-	width: 76px !important;
-}
-
-.exp-invert-logo .sb-notif-on .yt-uix-button-content, .exp-invert-logo .guide-item.guide-item-selected, .exp-invert-logo .guide-item.guide-item-selected:hover, .exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text, .exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {
-	border-color: #c6c6c6;
-	background-image: linear-gradient(to bottom,#af2b26 0,#942422 100%);
-	background-color: #af2b26;
-}
-
-#yt-masthead-creation-button {
-    margin: 0px 376px 41px -450px;
-    position: absolute;
-    width: 56px;
-    padding: 0 0 2px 0px;
-    background-image: linear-gradient(to bottom,#fcfcfc 0,#f8f8f8 100%);
-    border: 1px solid #d3d3d3;
-    color: #333;
-    background-color: #f8f8f8;
-}
-#yt-masthead-creation-button:hover {
-    margin: 0px 376px 41px -450px;
-    position: absolute;
-    width: 56px;
-    padding: 0 0 2px 0px;
-    background-image: linear-gradient(to bottom,#f8f8f8 0,#eee 100%);
-    border: 1px solid #d3d3d3;
-    color: #333;
-    background-color: #f8f8f8;
-}
-
-#search-btn {
-	background-color: #f8f8f8;
-	background-image: linear-gradient(to bottom,#fcfcfc 0,#f8f8f8 100%);
-}
-
-#search-btn:hover {
-	background-color: #eee;
-	background-image: linear-gradient(to bottom,#f8f8f8 0,#eee 100%);
-    box-shadow: none;
-}
-
-.yt-uix-button-default {
-	background-image: linear-gradient(to bottom,#fcfcfc 0,#f8f8f8 100%);
-	box-shadow: none;
-	background-color: #f8f8f8;
-}
-
-.yt-uix-button-default:hover {
-	background-color: #eee;
-	background-image: linear-gradient(to bottom,#f8f8f8 0,#eee 100%);
-    box-shadow: none;
-}
-
-	.guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover {
-	background-image: linear-gradient(to bottom,#444 0,#333 100%);
-	font-size: 11px;
-	height: 26px;
-	line-height: 19px;
-}
-
-.guide-collapsible-item .yt-uix-expander-head:hover{
-	background-image: linear-gradient(to bottom,#444 0,#333 100%);
-}
-
-
-    .yt-alert-default.yt-alert-info,
-    .yt-alert-actionable.yt-alert-info,
-    .yt-alert-naked.yt-alert-info .yt-alert-icon,
-    .yt-alert-small.yt-alert-info
-    {
-        background: linear-gradient(to bottom, #849fc2 0, #6683b3 100%);
-        height: 29px !important;
+       .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
+        background-size: auto !important;
+        background-position: -20px -234px !important;
+        width: 76px !important;
     }
 
-/* Watch Page Buttons *\/
-button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.pause-resume-autoplay.action-panel-trigger.action-panel-trigger-share.yt-uix-tooltip:hover {
-    border-bottom: solid 3px #930 !important;
-    font-weight: bold;
-    height: 44px !important;
-    margin: -3px 2px -7px 2px !important;
-    color: #333 !important;
-    opacity: 1;
-}
-button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.yt-uix-videoactionmenu-button.addto-button.pause-resume-autoplay.yt-uix-menu-trigger.yt-uix-tooltip:hover {
-    border-bottom: solid 3px #930 !important;
-    font-weight: bold;
-    height: 44px !important;
-    margin: -6px 0px -8px 0px !important;
-    color: #333 !important;
-    opacity: 1;
-}
-button#action-panel-overflow-button:hover {
-    margin: -10px 0px -14px 0px;
-    font-weight: bold;
-    border-bottom: solid 3px #930 !important;
-    color: #333 !important;
-    height: 44px;
-    opacity: 1;
-}
-#watch8-secondary-actions.yt-uix-button-group .yt-uix-button.yt-uix-button-toggled {
-	border-bottom: solid 3px #930 !important;
-    color: #333 !important;
-	opacity: 1;
-}
-
-/* Subscribe Button *\/
-
-.yt-uix-button-subscribe-branded::before {
-	background-image: url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflYd9UnY.png) !important;
-	width: 26px;
-	height: 22px;
-	margin-left: -6px;
-	border-bottom-left-radius: 2px;
-	border-top-left-radius: 2px;
-	background-position: 5px -246px;
-	background-color: #a9382e;
-	border: 1px solid #880904;
-}
-	.exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]{
-	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%)!important;
-	border-radius: 2px !important;
-}
-	.exp-invert-logo .yt-uix-button-subscribe-branded:hover {
-	background-image: linear-gradient(to bottom,#fff 0,#d2d2d2 100%) !important;
-	border: solid 1px #333;
-}
-  	.yt-uix-button.yt-uix-button-subscribe-branded, .yt-uix-button.yt-uix-button-subscribed-branded {
-	padding: 0 8px 0 5.5px;
-  height: 25px;
-	border: 1px solid #ccc;
-}
-	.yt-uix-button-subscribe-branded .yt-uix-button-content, .yt-uix-button-subscribed-branded .yt-uix-button-content {
-	font-size: 11px;
-	font-weight: bold;
-	color: #333;
-	text-shadow: 0 1px 0 #fff;
-}
-
-/* Blue Button *\/
-.yt-uix-button-primary,
-    .yt-uix-button-primary[disabled],
-    .yt-uix-button-primary[disabled]:hover,
-    .yt-uix-button-primary[disabled]:active,
-    .yt-uix-button-primary[disabled]:focus
-    {
-        background-image: linear-gradient(to bottom, #5384be 0, #3f76b7 100%);
-        text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+    .exp-invert-logo .sb-notif-on .yt-uix-button-content, .exp-invert-logo .guide-item.guide-item-selected, .exp-invert-logo .guide-item.guide-item-selected:hover, .exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text, .exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {
+        border-color: #c6c6c6;
+        background-image: linear-gradient(to bottom,#af2b26 0,#942422 100%);
+        background-color: #af2b26;
     }
-    .yt-uix-button-primary:hover
-    {
-        border-color: #325e92;
-        background-image: linear-gradient(to bottom, #3f76b7 0, #3d71b0 100%);
+
+    #yt-masthead-creation-button {
+        margin: 0px 376px 41px -450px;
+        position: absolute;
+        width: 60px;
+        padding: 0 0 2px 0px;
+        background-image: linear-gradient(to bottom,#fcfcfc 0,#f8f8f8 100%);
+        border: 1px solid #d3d3d3;
+        color: #333;
+        background-color: #f8f8f8;
     }
+    #yt-masthead-creation-button:hover {
+        margin: 0px 376px 41px -450px;
+        position: absolute;
+        width: 60px;
+        padding: 0 0 2px 0px;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#eee 100%);
+        border: 1px solid #d3d3d3;
+        color: #333;
+        background-color: #f8f8f8;
+    }
+
+    #yt-masthead-creation-button::after {
+        opacity: 1;
+        content: '🢓';
+        left: 3.55rem;
+        width: 30px;
+        height: 26px;
+        background-image: linear-gradient(to bottom,#fcfcfc 0,#f8f8f8 100%);
+        border: 1px solid #d3d3d3;
+        position: absolute;
+        top: -1px;
+        border-radius: 0px 2px 2px 0px;
+        line-height: 39px;
+        font-size: 20px;
+    }
+    
+    #yt-masthead-creation-button:hover::after {
+        opacity: 1;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#eee 100%);
+        border: 1px solid #d3d3d3;
+    }
+
+    #search-btn {
+        background-color: #f8f8f8;
+        background-image: linear-gradient(to bottom,#fcfcfc 0,#f8f8f8 100%);
+    }
+
+    #search-btn:hover {
+        background-color: #eee;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#eee 100%);
+        box-shadow: none;
+    }
+
+    .yt-uix-button-default {
+        background-image: linear-gradient(to bottom,#fcfcfc 0,#f8f8f8 100%);
+        box-shadow: none;
+        background-color: #f8f8f8;
+    }
+
+    .yt-uix-button-default:hover {
+        background-color: #eee;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#eee 100%);
+        box-shadow: none;
+    }
+
+        .guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover {
+        background-image: linear-gradient(to bottom,#444 0,#333 100%);
+        font-size: 11px;
+        height: 26px;
+        line-height: 19px;
+    }
+
+    .guide-collapsible-item .yt-uix-expander-head:hover{
+        background-image: linear-gradient(to bottom,#444 0,#333 100%);
+    }
+
+
+        .yt-alert-default.yt-alert-info,
+        .yt-alert-actionable.yt-alert-info,
+        .yt-alert-naked.yt-alert-info .yt-alert-icon,
+        .yt-alert-small.yt-alert-info
+        {
+            background: linear-gradient(to bottom, #849fc2 0, #6683b3 100%);
+            height: 29px !important;
+        }
+
+    /* Watch Page Buttons *\/
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.pause-resume-autoplay.action-panel-trigger.action-panel-trigger-share.yt-uix-tooltip:hover {
+        border-bottom: solid 3px #930 !important;
+        font-weight: bold;
+        height: 44px !important;
+        margin: -3px 2px -7px 2px !important;
+        color: #333 !important;
+        opacity: 1;
+    }
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.yt-uix-videoactionmenu-button.addto-button.pause-resume-autoplay.yt-uix-menu-trigger.yt-uix-tooltip:hover {
+        border-bottom: solid 3px #930 !important;
+        font-weight: bold;
+        height: 44px !important;
+        margin: -6px 0px -8px 0px !important;
+        color: #333 !important;
+        opacity: 1;
+    }
+    button#action-panel-overflow-button:hover {
+        margin: -10px 0px -14px 0px;
+        font-weight: bold;
+        border-bottom: solid 3px #930 !important;
+        color: #333 !important;
+        height: 44px;
+        opacity: 1;
+    }
+    #watch8-secondary-actions.yt-uix-button-group .yt-uix-button.yt-uix-button-toggled {
+        border-bottom: solid 3px #930 !important;
+        color: #333 !important;
+        opacity: 1;
+    }
+
+    /* Subscribe Button *\/
+
+    .yt-uix-button-subscribe-branded::before {
+        background-image: url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflYd9UnY.png) !important;
+        width: 26px;
+        height: 22px;
+        margin-left: -6px;
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px;
+        background-position: 5px -246px;
+        background-color: #a9382e;
+        border: 1px solid #880904;
+    }
+        .exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]{
+        background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%)!important;
+        border-radius: 2px !important;
+    }
+        .exp-invert-logo .yt-uix-button-subscribe-branded:hover {
+        background-image: linear-gradient(to bottom,#fff 0,#d2d2d2 100%) !important;
+        border: solid 1px #333;
+    }
+        .yt-uix-button.yt-uix-button-subscribe-branded, .yt-uix-button.yt-uix-button-subscribed-branded {
+        padding: 0 8px 0 5.5px;
+      height: 25px;
+        border: 1px solid #ccc;
+    }
+        .yt-uix-button-subscribe-branded .yt-uix-button-content, .yt-uix-button-subscribed-branded .yt-uix-button-content {
+        font-size: 11px;
+        font-weight: bold;
+        color: #333;
+        text-shadow: 0 1px 0 #fff;
+    }
+
+    /* Blue Button *\/
+    .yt-uix-button-primary,
+        .yt-uix-button-primary[disabled],
+        .yt-uix-button-primary[disabled]:hover,
+        .yt-uix-button-primary[disabled]:active,
+        .yt-uix-button-primary[disabled]:focus
+        {
+            background-image: linear-gradient(to bottom, #5384be 0, #3f76b7 100%);
+            text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+        }
+        .yt-uix-button-primary:hover
+        {
+            border-color: #325e92;
+            background-image: linear-gradient(to bottom, #3f76b7 0, #3d71b0 100%);
+        }
 
 EOT;
 
@@ -176,211 +197,253 @@ EOT;
 
 1 "July 2013 to January 2014 (No gradients, red subscribe button)" <<<EOT
 
-   .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
-	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
-	background-size: auto !important;
-	background-position: -20px -234px !important;
-	width: 76px !important;
-}
+       .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
+        background-size: auto !important;
+        background-position: -20px -234px !important;
+        width: 76px !important;
+    }
 
-.exp-invert-logo .sb-notif-on .yt-uix-button-content, .exp-invert-logo .guide-item.guide-item-selected, .exp-invert-logo .guide-item.guide-item-selected:hover, .exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text, .exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {
-	background-image: unset;
-	background-color: #cc181e;
-}
+    .exp-invert-logo .sb-notif-on .yt-uix-button-content, .exp-invert-logo .guide-item.guide-item-selected, .exp-invert-logo .guide-item.guide-item-selected:hover, .exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text, .exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {
+        background-image: unset;
+        background-color: #cc181e;
+    }
 
-#yt-masthead-creation-button {
-    margin: 0px 376px 41px -450px;
-    position: absolute;
-    width: 56px;
-    padding: 0 0 2px 0px;
-	background-color: #f8f8f8;
-	background-image: linear-gradient(to bottom,#f8f8f8 0,#f8f8f8 100%);
-    border: 1px solid #d3d3d3;
-    color: #333;
-    background-color: #f8f8f8;
-}
+    #yt-masthead-creation-button {
+        margin: 0px 376px 41px -450px;
+        position: absolute;
+        width: 60px;
+        padding: 0 0 2px 0px;
+        background-color: #f8f8f8;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#f8f8f8 100%);
+        border: 1px solid #d3d3d3;
+        color: #333;
+        background-color: #f8f8f8;
+    }
 
-#yt-masthead-creation-button:hover {
-	background-color: #eee;
-	background-image: linear-gradient(to bottom,#eee 0,#eee 100%);
-}
+    #yt-masthead-creation-button:hover {
+        background-color: #eee;
+        background-image: linear-gradient(to bottom,#eee 0,#eee 100%);
+    }
+
+    #yt-masthead-creation-button::after {
+        opacity: 1;
+        content: '🢓';
+        left: 3.55rem;
+        width: 30px;
+        height: 26px;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#f8f8f8 100%);
+        border: 1px solid #d3d3d3;
+        position: absolute;
+        top: -1px;
+        border-radius: 0px 2px 2px 0px;
+        line-height: 39px;
+        font-size: 20px;
+    }
+    
+    #yt-masthead-creation-button:hover::after {
+        opacity: 1;
+        background-image: linear-gradient(to bottom,#eee 0,#eee 100%);
+        border: 1px solid #d3d3d3;
+    }
 
 
-	.guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover {
-	font-size: 11px;
-	height: 26px;
-	line-height: 19px;
-}
+        .guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover {
+        font-size: 11px;
+        height: 26px;
+        line-height: 19px;
+    }
 
 
 
-/* Subscribe Button *\/
+    /* Subscribe Button *\/
 
-	.exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled], .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus{
-	background-image: linear-gradient(to top,#c7231a 0,#e62c22 100%) !important;
-	border-radius: 2px !important;
-    border: none;
-}
-.yt-uix-button-subscribe-branded::before {
-	background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflSir8ao.webp) 0 -2129px !important;
-    width: 16px;
-    height: 12px;
-	margin-left: unset;
-	background-position: unset;
-	background-color: unset;
-	border: unset;
-}
-		.exp-invert-logo .yt-uix-button-subscribe-branded:hover {
-	background-image: linear-gradient(to top,#dc2f2c 0,#fa362a 100%) !important;
-    border: unset;
-}
+        .exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled], .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus{
+        background-image: linear-gradient(to top,#c7231a 0,#e62c22 100%) !important;
+        border-radius: 2px !important;
+        border: none;
+    }
+    .yt-uix-button-subscribe-branded::before {
+        background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflSir8ao.webp) 0 -2129px !important;
+        width: 16px;
+        height: 12px;
+        margin-left: unset;
+        background-position: unset;
+        background-color: unset;
+        border: unset;
+    }
+            .exp-invert-logo .yt-uix-button-subscribe-branded:hover {
+        background-image: linear-gradient(to top,#dc2f2c 0,#fa362a 100%) !important;
+        border: unset;
+    }
 
-.yt-uix-button-subscribe-branded .yt-uix-button-content {
-	font-size: 12px;
-	font-weight: initial;
-	color: #fff;
-	text-shadow: unset;
-}
-.yt-uix-button-subscribed-branded .yt-uix-button-content {
-    font-size: 12px;
-	font-weight: initial;
-	text-shadow: unset;
-}
+    .yt-uix-button-subscribe-branded .yt-uix-button-content {
+        font-size: 12px;
+        font-weight: initial;
+        color: #fff;
+        text-shadow: unset;
+    }
+    .yt-uix-button-subscribed-branded .yt-uix-button-content {
+        font-size: 12px;
+        font-weight: initial;
+        text-shadow: unset;
+    }
 
-/* Watch Page Buttons *\/
-button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.pause-resume-autoplay.action-panel-trigger.action-panel-trigger-share.yt-uix-tooltip:hover {
-    border-bottom: solid 3px #cc181e !important;
-    font-weight: bold;
-    height: 44px !important;
-    margin: -3px 2px -7px 2px !important;
-    color: #333 !important;
-    opacity: 1;
-}
-button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.yt-uix-videoactionmenu-button.addto-button.pause-resume-autoplay.yt-uix-menu-trigger.yt-uix-tooltip:hover {
-    border-bottom: solid 3px #cc181e !important;
-    font-weight: bold;
-    height: 44px !important;
-    margin: -6px 0px -8px 0px !important;
-    color: #333 !important;
-    opacity: 1;
-}
-button#action-panel-overflow-button:hover {
-    margin: -10px 0px -14px 0px;
-    font-weight: bold;
-    border-bottom: solid 3px #cc181e !important;
-    color: #333 !important;
-    height: 44px;
-    opacity: 1;
-}
-#watch8-secondary-actions.yt-uix-button-group .yt-uix-button.yt-uix-button-toggled {
-	border-bottom: solid 3px #cc181e !important;
-    color: #333 !important;
-	opacity: 1;
-}
+    /* Watch Page Buttons *\/
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.pause-resume-autoplay.action-panel-trigger.action-panel-trigger-share.yt-uix-tooltip:hover {
+        border-bottom: solid 3px #cc181e !important;
+        font-weight: bold;
+        height: 44px !important;
+        margin: -3px 2px -7px 2px !important;
+        color: #333 !important;
+        opacity: 1;
+    }
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.yt-uix-videoactionmenu-button.addto-button.pause-resume-autoplay.yt-uix-menu-trigger.yt-uix-tooltip:hover {
+        border-bottom: solid 3px #cc181e !important;
+        font-weight: bold;
+        height: 44px !important;
+        margin: -6px 0px -8px 0px !important;
+        color: #333 !important;
+        opacity: 1;
+    }
+    button#action-panel-overflow-button:hover {
+        margin: -10px 0px -14px 0px;
+        font-weight: bold;
+        border-bottom: solid 3px #cc181e !important;
+        color: #333 !important;
+        height: 44px;
+        opacity: 1;
+    }
+    #watch8-secondary-actions.yt-uix-button-group .yt-uix-button.yt-uix-button-toggled {
+        border-bottom: solid 3px #cc181e !important;
+        color: #333 !important;
+        opacity: 1;
+    }
 EOT;
 
 2 "January to Feburary 2014 (Same as July 2013, but with 2013 logo instead)" <<<EOT
 
-    .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
-    background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxkQak9.png) 0 -304px !important;
-    background-size: auto !important;
-    width: 79px !important;
-}
+        .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
+        background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxkQak9.png) 0 -304px !important;
+        background-size: auto !important;
+        width: 79px !important;
+    }
 
-.exp-invert-logo .sb-notif-on .yt-uix-button-content, .exp-invert-logo .guide-item.guide-item-selected, .exp-invert-logo .guide-item.guide-item-selected:hover, .exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text, .exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {
-	background-image: unset;
-	background-color: #cc181e;
-}
+    .exp-invert-logo .sb-notif-on .yt-uix-button-content, .exp-invert-logo .guide-item.guide-item-selected, .exp-invert-logo .guide-item.guide-item-selected:hover, .exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text, .exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {
+        background-image: unset;
+        background-color: #cc181e;
+    }
 
-#yt-masthead-creation-button {
-    margin: 0px 376px 41px -450px;
-    position: absolute;
-    width: 56px;
-    padding: 0 0 2px 0px;
-	background-color: #f8f8f8;
-	background-image: linear-gradient(to bottom,#f8f8f8 0,#f8f8f8 100%);
-    border: 1px solid #d3d3d3;
-    color: #333;
-    background-color: #f8f8f8;
-}
+        #yt-masthead-creation-button {
+        margin: 0px 376px 41px -450px;
+        position: absolute;
+        width: 60px;
+        padding: 0 0 2px 0px;
+        background-color: #f8f8f8;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#f8f8f8 100%);
+        border: 1px solid #d3d3d3;
+        color: #333;
+        background-color: #f8f8f8;
+    }
 
-#yt-masthead-creation-button:hover {
-	background-color: #eee;
-	background-image: linear-gradient(to bottom,#eee 0,#eee 100%);
-}
+    #yt-masthead-creation-button:hover {
+        background-color: #eee;
+        background-image: linear-gradient(to bottom,#eee 0,#eee 100%);
+    }
+
+    #yt-masthead-creation-button::after {
+        opacity: 1;
+        content: '🢓';
+        left: 3.55rem;
+        width: 30px;
+        height: 26px;
+        background-image: linear-gradient(to bottom,#f8f8f8 0,#f8f8f8 100%);
+        border: 1px solid #d3d3d3;
+        position: absolute;
+        top: -1px;
+        border-radius: 0px 2px 2px 0px;
+        line-height: 39px;
+        font-size: 20px;
+    }
+    
+    #yt-masthead-creation-button:hover::after {
+        opacity: 1;
+        background-image: linear-gradient(to bottom,#eee 0,#eee 100%);
+        border: 1px solid #d3d3d3;
+    }
 
 
-	.guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover {
-	font-size: 11px;
-	height: 26px;
-	line-height: 19px;
-}
+        .guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover {
+        font-size: 11px;
+        height: 26px;
+        line-height: 19px;
+    }
 
 
 
-/* Subscribe Button *\/
+    /* Subscribe Button *\/
 
-	.exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled], .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus{
-	background-image: linear-gradient(to top,#c7231a 0,#e62c22 100%) !important;
-	border-radius: 2px !important;
-    border: none;
-}
-.yt-uix-button-subscribe-branded::before {
-	background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflSir8ao.webp) 0 -2129px !important;
-    width: 16px;
-    height: 12px;
-	margin-left: unset;
-	background-position: unset;
-	background-color: unset;
-	border: unset;
-}
-		.exp-invert-logo .yt-uix-button-subscribe-branded:hover {
-	background-image: linear-gradient(to top,#dc2f2c 0,#fa362a 100%) !important;
-    border: unset;
-}
+        .exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled], .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus{
+        background-image: linear-gradient(to top,#c7231a 0,#e62c22 100%) !important;
+        border-radius: 2px !important;
+        border: none;
+    }
+    .yt-uix-button-subscribe-branded::before {
+        background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflSir8ao.webp) 0 -2129px !important;
+        width: 16px;
+        height: 12px;
+        margin-left: unset;
+        background-position: unset;
+        background-color: unset;
+        border: unset;
+    }
+            .exp-invert-logo .yt-uix-button-subscribe-branded:hover {
+        background-image: linear-gradient(to top,#dc2f2c 0,#fa362a 100%) !important;
+        border: unset;
+    }
 
-.yt-uix-button-subscribe-branded .yt-uix-button-content {
-	font-size: 12px;
-	font-weight: initial;
-	color: #fff;
-	text-shadow: unset;
-}
-.yt-uix-button-subscribed-branded .yt-uix-button-content {
-    font-size: 12px;
-	font-weight: initial;
-	text-shadow: unset;
-}
+    .yt-uix-button-subscribe-branded .yt-uix-button-content {
+        font-size: 12px;
+        font-weight: initial;
+        color: #fff;
+        text-shadow: unset;
+    }
+    .yt-uix-button-subscribed-branded .yt-uix-button-content {
+        font-size: 12px;
+        font-weight: initial;
+        text-shadow: unset;
+    }
 
-/* Watch Page Buttons *\/
-button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.pause-resume-autoplay.action-panel-trigger.action-panel-trigger-share.yt-uix-tooltip:hover {
-    border-bottom: solid 3px #cc181e !important;
-    font-weight: bold;
-    height: 44px !important;
-    margin: -3px 2px -7px 2px !important;
-    color: #333 !important;
-    opacity: 1;
-}
-button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.yt-uix-videoactionmenu-button.addto-button.pause-resume-autoplay.yt-uix-menu-trigger.yt-uix-tooltip:hover {
-    border-bottom: solid 3px #cc181e !important;
-    font-weight: bold;
-    height: 44px !important;
-    margin: -6px 0px -8px 0px !important;
-    color: #333 !important;
-    opacity: 1;
-}
-button#action-panel-overflow-button:hover {
-    margin: -10px 0px -14px 0px;
-    font-weight: bold;
-    border-bottom: solid 3px #cc181e !important;
-    color: #333 !important;
-    height: 44px;
-    opacity: 1;
-}
-#watch8-secondary-actions.yt-uix-button-group .yt-uix-button.yt-uix-button-toggled {
-	border-bottom: solid 3px #cc181e !important;
-    color: #333 !important;
-	opacity: 1;
-}
+    /* Watch Page Buttons *\/
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.pause-resume-autoplay.action-panel-trigger.action-panel-trigger-share.yt-uix-tooltip:hover {
+        border-bottom: solid 3px #cc181e !important;
+        font-weight: bold;
+        height: 44px !important;
+        margin: -3px 2px -7px 2px !important;
+        color: #333 !important;
+        opacity: 1;
+    }
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.yt-uix-videoactionmenu-button.addto-button.pause-resume-autoplay.yt-uix-menu-trigger.yt-uix-tooltip:hover {
+        border-bottom: solid 3px #cc181e !important;
+        font-weight: bold;
+        height: 44px !important;
+        margin: -6px 0px -8px 0px !important;
+        color: #333 !important;
+        opacity: 1;
+    }
+    button#action-panel-overflow-button:hover {
+        margin: -10px 0px -14px 0px;
+        font-weight: bold;
+        border-bottom: solid 3px #cc181e !important;
+        color: #333 !important;
+        height: 44px;
+        opacity: 1;
+    }
+    #watch8-secondary-actions.yt-uix-button-group .yt-uix-button.yt-uix-button-toggled {
+        border-bottom: solid 3px #cc181e !important;
+        color: #333 !important;
+        opacity: 1;
+    }
 EOT;
 }
 @advanced dropdown breakout2012or2013 "Break out the '#action-panel-overflow-menu'" {
@@ -795,6 +858,7 @@ EOT;
     #masthead-search {
         max-width: 556.2px;
     }
+    
     #yt-masthead .yt-masthead-logo-container {
         width: 189px;
     }
