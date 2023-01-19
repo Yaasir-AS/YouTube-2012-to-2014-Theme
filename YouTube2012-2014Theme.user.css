@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.2.1
+@version        1.2.2
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
 @author         yaasir ahmad-sanni (naadir500)
-@license        CC0-1.0
+@license        CC BY-SA-4.0
 @advanced text username "YT Username to add accuracy" "Default User"
 @advanced dropdown December_2012_to_July_2013-July_2013_to_Feburary_2014 "Which iteration of this layout?" {
 0 "December 2012 to July 2013 (Gradient heavy, different subscribe button)*" <<<EOT
@@ -639,6 +639,123 @@ EOT;
 
 @advanced dropdown channels_3-0 "(Experimental) Recreation of Channels 3.0" {
 0 "Disabled*" <<<EOT
+
+/* most of the channel layout *\/
+
+.branded-page-v2-primary-col {
+	width: 53.14rem;
+}
+
+.branded-page-v2-secondary-col {
+	position: absolute;
+	top: 0rem;
+}
+
+.channel-header .primary-header-contents {
+	padding: 3px 0 2px;
+}
+
+.yt-card {
+	box-shadow: none;
+}
+
+
+#appbar-guide-menu {
+	left: 0rem;
+}
+
+/* Subheader *\/
+
+#channel-search .show-search .search-icon {
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-refresh-vflAjYAhp.png) -170px -201px;
+	width: 14px;
+	height: 14px;
+}
+
+.show-search.epic-nav-item.secondary-nav:hover {
+    border: none;
+}
+
+#channel-subheader li a {
+	font-weight: bold;
+    font-size: 11px;
+    color: #9c9c9c;
+}
+
+#channel-subheader li a:hover {
+	color: #333;
+}
+
+a.yt-uix-button-epic-nav-item.selected {
+	color: #333 !important;
+}
+
+
+#channel-subheader li:first-child a span.yt-uix-button-content {
+	margin-top: 8px;
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-channels-c4-vflghNwTI.png);
+	height: 15px;
+	width: 22px;
+	font-size: 0;
+	display: block;
+	background-position: 3px 0px;
+    opacity: 0.5;
+}
+
+#channel-subheader li:first-child a.selected span.yt-uix-button-content {
+    opacity: 1;
+}
+
+#channel-subheader li:first-child a:hover span.yt-uix-button-content {
+    opacity: 1;
+}
+
+.branded-page-v2-top-row #channel-subheader {
+	border-bottom: solid 1px #eee;
+}
+
+/* Shelf Arrows *\/
+
+.compact-shelf .yt-uix-shelfslider-next-arrow {
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxq3CR8.png) 0 -27px;
+	width: 16px;
+	height: 22px;
+}
+
+.compact-shelf .yt-uix-shelfslider-prev-arrow {
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxq3CR8.png) 0 -239px;
+	width: 16px;
+	height: 22px;
+}
+
+.compact-shelf .yt-uix-button-shelf-slider-pager {
+	width: 23px;
+	height: 170.45px;
+	top: 33%;
+    z-index: 100;
+}
+
+.browse-list-item-container:hover .compact-shelf:hover .yt-uix-button-shelf-slider-pager,
+.browse-list-item-container:hover .compact-shelf .yt-uix-button-shelf-slider-pager, .compact-shelf:hover .yt-uix-button-shelf-slider-pager {
+	width: 23px;
+    border: none;
+    box-shadow: none;
+}
+
+.browse-list-item-container:hover .compact-shelf .yt-uix-shelfslider-prev, .compact-shelf:hover .yt-uix-shelfslider-prev {
+	left: -15px;
+}
+
+.browse-list-item-container:hover .compact-shelf .yt-uix-shelfslider-next, .compact-shelf:hover .yt-uix-shelfslider-next {
+	right: -15px;
+}
+
+.yt-lockup-title a {
+    font-weight: bold;
+    font-size: 13px !important;
+    color: #438bc5;
+}
+
 EOT;
 
 1 "Enabled" <<<EOT
@@ -1006,8 +1123,10 @@ EOT;
         width: 18px;
         height: 18px;
     }
-    #appbar-guide-menu {
-        overflow: visible;
+    #appbar-guide-menu:hover {
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #33333321 #ccc3;
     }
     .show-guide #appbar-guide-menu {
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .1);
@@ -1018,6 +1137,11 @@ EOT;
     }
     #appbar-guide-menu:hover {
         overflow-y: visible;
+    }
+    
+   #appbar-guide-menu {
+         /* position: absolute; */
+        z-index: 10;
     }
 
     #appbar-guide-button {
@@ -1033,6 +1157,26 @@ EOT;
         margin-left: 11px;
         margin-top: 15px;
     }
+    
+    .guide-item .guide-builder-icon {
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png);
+        background-position: 1px -168px;
+    }
+    
+    .guide-item:hover .guide-builder-icon {
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png);
+        background-position: 1px -168px;
+    }
+    
+    .guide-item .thumb {
+        margin-left: 2px;
+    }
+    
+    .yt-thumb-20 {
+        width: 18px;
+        margin-bottom: 1px;
+    }
+    
     .guide-flyout-trigger.on-hover,
     .guide-item,
     .guide-item .yt-deemphasized-text,
@@ -1503,6 +1647,7 @@ EOT;
     
 }
 @-moz-document regexp("http*.://.*.youtube.com/watch.*") {
+    
     .comment-renderer-reply::after {
         content: "\002022";
         margin: 0px 5px 0px 10px;
