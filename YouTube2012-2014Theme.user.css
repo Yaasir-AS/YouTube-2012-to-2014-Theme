@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.2.2.1
+@version        1.2.3
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
@@ -637,7 +637,7 @@ button#action-panel-overflow-button{
 EOT;
 }
 
-@advanced dropdown channels_3-0 "(Experimental) Recreation of Channels 3.0" {
+@advanced dropdown channels_3-0 "(Experimental) Cosmic Panda-esque channel design" {
 0 "Disabled*" <<<EOT
 
 /* most of the channel layout *\/
@@ -714,47 +714,6 @@ a.yt-uix-button-epic-nav-item.selected {
 	border-bottom: solid 1px #eee;
 }
 
-/* Shelf Arrows *\/
-
-.compact-shelf .yt-uix-shelfslider-next-arrow {
-	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxq3CR8.png) 0 -27px;
-	width: 16px;
-	height: 22px;
-}
-
-.compact-shelf .yt-uix-shelfslider-prev-arrow {
-	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxq3CR8.png) 0 -239px;
-	width: 16px;
-	height: 22px;
-}
-
-.compact-shelf .yt-uix-button-shelf-slider-pager {
-	width: 23px;
-	height: 170.45px;
-	top: 33%;
-    z-index: 100;
-}
-
-.browse-list-item-container:hover .compact-shelf:hover .yt-uix-button-shelf-slider-pager,
-.browse-list-item-container:hover .compact-shelf .yt-uix-button-shelf-slider-pager, .compact-shelf:hover .yt-uix-button-shelf-slider-pager {
-	width: 23px;
-    border: none;
-    box-shadow: none;
-}
-
-.browse-list-item-container:hover .compact-shelf .yt-uix-shelfslider-prev, .compact-shelf:hover .yt-uix-shelfslider-prev {
-	left: -15px;
-}
-
-.browse-list-item-container:hover .compact-shelf .yt-uix-shelfslider-next, .compact-shelf:hover .yt-uix-shelfslider-next {
-	right: -15px;
-}
-
-.yt-lockup-title a {
-    font-weight: bold;
-    font-size: 13px !important;
-    color: #438bc5;
-}
 
 EOT;
 
@@ -964,6 +923,58 @@ a.yt-uix-button-epic-nav-item:hover {
 .yt-card.clearfix {
     width: 656px;
     padding: 0.7rem;
+}
+
+/* More Changes to make the content more Cosmic Panda Esque *\/
+
+.branded-page-related-channels-item.spf-link.clearfix {
+	padding: 0.4rem 0.5rem 0.2rem 0.3rem;
+	border-radius: 3px;
+}
+
+.video-player-view-component.branded-page-box {
+	margin: 0 !important;
+	padding: 0;
+	border-radius: 0px 3px 3px 0px !important;
+}
+
+.feed-item-container.browse-list-item-container.yt-section-hover-container.compact-shelf.shelf-item.branded-page-box.clearfix {
+	padding: 12px 4px;
+}
+
+.yt-lockup.yt-lockup-grid {
+	border-radius: 3px;
+    height: 10.3rem;
+}
+
+.yt-lockup.yt-lockup-video .yt-lockup-content,.yt-lockup.yt-lockup-playlist .yt-lockup-content {
+	padding: 0px 6px 0px 6px;
+}
+
+.video-detail {
+	padding: 10px 10px 0px 0px;
+}
+
+.branded-page-related-channels-item,
+.video-player-view-component,
+.yt-lockup.yt-lockup-video,
+.yt-lockup.yt-lockup-playlist
+{
+	background: #fff;
+}
+
+.branded-page-related-channels-item:hover,
+.video-player-view-component:hover,
+.yt-lockup.yt-lockup-video:hover,
+.yt-lockup.yt-lockup-playlist:hover,
+.compact-shelf:hover.yt-uix-button-shelf-slider-pager
+{
+	background-image: linear-gradient(to bottom,#fff 0,#f0f0f0 100%) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5),inset 0 -1px 0 #fff;
+}
+
+.compact-shelf .yt-uix-shelfslider-list {
+	height: 10.5rem;
 }
 
 EOT;
@@ -1445,6 +1456,49 @@ EOT;
 } 
 */
     /*[[December_2012_to_July_2013-July_2013_to_Feburary_2014]]*/
+    
+    
+        /* Shelf Arrows */
+
+    .compact-shelf .yt-uix-shelfslider-next-arrow {
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxq3CR8.png) 0 -27px;
+        width: 16px;
+        height: 22px;
+    }
+
+    .compact-shelf .yt-uix-shelfslider-prev-arrow {
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxq3CR8.png) 0 -239px;
+        width: 16px;
+        height: 22px;
+    }
+
+    .compact-shelf .yt-uix-button-shelf-slider-pager {
+        width: 23px;
+        height: 170.45px;
+        top: 33%;
+        z-index: 100;
+    }
+
+    .browse-list-item-container:hover .compact-shelf:hover .yt-uix-button-shelf-slider-pager,
+    .browse-list-item-container:hover .compact-shelf .yt-uix-button-shelf-slider-pager, .compact-shelf:hover .yt-uix-button-shelf-slider-pager {
+        width: 23px;
+        border: none;
+        box-shadow: none;
+    }
+
+    .browse-list-item-container:hover .compact-shelf .yt-uix-shelfslider-prev, .compact-shelf:hover .yt-uix-shelfslider-prev {
+        left: -15px;
+    }
+
+    .browse-list-item-container:hover .compact-shelf .yt-uix-shelfslider-next, .compact-shelf:hover .yt-uix-shelfslider-next {
+        right: -15px;
+    }
+
+    .yt-lockup-title a {
+        font-weight: bold;
+        font-size: 13px !important;
+        color: #438bc5;
+    }
 }
 
 @-moz-document url("https://www.youtube.com/premium") {
@@ -1459,7 +1513,7 @@ EOT;
 }
 
 @-moz-document regexp("http*.://.*.youtube.com/user/.*./videos"), regexp("http*.://.*.youtube.com/channel/.*./videos"), regexp("http*.://.*.youtube.com/@.*./videos"), regexp("http*.://.*.youtube.com/user/.*./playlists"), regexp("http*.://.*.youtube.com/channel/.*./playlists"), regexp("http*.://.*.youtube.com/@.*./playlists"), regexp("http*.://.*.youtube.com/user/.*./channels"), regexp("http*.://.*.youtube.com/channel/.*./channels"), regexp("http*.://.*.youtube.com/@.*/channels") {
-    /*[[separate-option]]*/
+    
     /* .yt-card.clearfix {
         width: 656px;
         padding: 12px;
