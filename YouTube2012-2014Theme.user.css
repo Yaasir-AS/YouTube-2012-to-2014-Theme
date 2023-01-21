@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.2.2
+@version        1.2.2.1
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
@@ -963,6 +963,7 @@ a.yt-uix-button-epic-nav-item:hover {
 
 .yt-card.clearfix {
     width: 656px;
+    padding: 0.7rem;
 }
 
 EOT;
