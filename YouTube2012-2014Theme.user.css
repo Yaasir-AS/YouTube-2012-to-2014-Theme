@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.2.3
+@version        1.2.3.1
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
@@ -11,14 +11,14 @@ Requires Rehike to function as this was built on YouTube's Hitchhiker layout, wh
 @advanced dropdown December_2012_to_July_2013-July_2013_to_Feburary_2014 "Which iteration of this layout?" {
 0 "December 2012 to July 2013 (Gradient heavy, different subscribe button)*" <<<EOT
 
-       .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
+    #yt-masthead #logo-container .logo {
         background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
         background-size: auto !important;
         background-position: -20px -234px !important;
         width: 76px !important;
     }
 
-    .exp-invert-logo .sb-notif-on .yt-uix-button-content, .exp-invert-logo .guide-item.guide-item-selected, .exp-invert-logo .guide-item.guide-item-selected:hover, .exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text, .exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {
+    #guide-container .guide-item.guide-item-selected {
         border-color: #c6c6c6;
         background-image: linear-gradient(to bottom,#af2b26 0,#942422 100%);
         background-color: #af2b26;
@@ -89,7 +89,7 @@ Requires Rehike to function as this was built on YouTube's Hitchhiker layout, wh
         box-shadow: none;
     }
 
-        .guide-flyout-trigger.on-hover, .guide-item:hover, .guide-item:hover .yt-deemphasized-text, .guide-collapsible-item .yt-uix-expander-head:hover {
+    .guide-item:hover {
         background-image: linear-gradient(to bottom,#444 0,#333 100%);
         font-size: 11px;
         height: 26px;
@@ -154,20 +154,20 @@ Requires Rehike to function as this was built on YouTube's Hitchhiker layout, wh
         background-color: #a9382e;
         border: 1px solid #880904;
     }
-        .exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]{
+    .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]{
         background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%)!important;
         border-radius: 2px !important;
     }
-        .exp-invert-logo .yt-uix-button-subscribe-branded:hover {
+    .yt-uix-button-subscribe-branded:hover {
         background-image: linear-gradient(to bottom,#fff 0,#d2d2d2 100%) !important;
-        border: solid 1px #333;
+        border: solid 1px #333 !important;
     }
-        .yt-uix-button.yt-uix-button-subscribe-branded, .yt-uix-button.yt-uix-button-subscribed-branded {
+    .yt-uix-button-subscribe-branded, .yt-uix-button.yt-uix-button-subscribed-branded {
         padding: 0 8px 0 5.5px;
       height: 25px;
         border: 1px solid #ccc;
     }
-        .yt-uix-button-subscribe-branded .yt-uix-button-content, .yt-uix-button-subscribed-branded .yt-uix-button-content {
+    .yt-uix-button-subscribe-branded .yt-uix-button-content, .yt-uix-button-subscribed-branded .yt-uix-button-content {
         font-size: 11px;
         font-weight: bold;
         color: #333;
@@ -197,7 +197,7 @@ EOT;
 
 1 "July 2013 to January 2014 (No gradients, red subscribe button)" <<<EOT
 
-       .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
+       #yt-masthead #logo-container .logo {
         background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
         background-size: auto !important;
         background-position: -20px -234px !important;
@@ -258,7 +258,7 @@ EOT;
 
     /* Subscribe Button *\/
 
-        .exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled], .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus{
+     .yt-uix-button-subscribe-branded {
         background-image: linear-gradient(to top,#c7231a 0,#e62c22 100%) !important;
         border-radius: 2px !important;
         border: none;
@@ -272,7 +272,7 @@ EOT;
         background-color: unset;
         border: unset;
     }
-            .exp-invert-logo .yt-uix-button-subscribe-branded:hover {
+    .yt-uix-button-subscribe-branded:hover {
         background-image: linear-gradient(to top,#dc2f2c 0,#fa362a 100%) !important;
         border: unset;
     }
@@ -323,7 +323,7 @@ EOT;
 
 2 "January to Feburary 2014 (Same as July 2013, but with 2013 logo instead)" <<<EOT
 
-        .exp-invert-logo #header::before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo{
+        #yt-masthead #logo-container .logo {
         background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxkQak9.png) 0 -304px !important;
         background-size: auto !important;
         width: 79px !important;
@@ -383,7 +383,7 @@ EOT;
 
     /* Subscribe Button *\/
 
-        .exp-invert-logo .resume-playback-progress-bar, .exp-invert-logo .yt-uix-button-subscribe-branded, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled], .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active, .exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus{
+    .yt-uix-button-subscribe-branded {
         background-image: linear-gradient(to top,#c7231a 0,#e62c22 100%) !important;
         border-radius: 2px !important;
         border: none;
@@ -397,7 +397,7 @@ EOT;
         background-color: unset;
         border: unset;
     }
-            .exp-invert-logo .yt-uix-button-subscribe-branded:hover {
+    .yt-uix-button-subscribe-branded:hover {
         background-image: linear-gradient(to top,#dc2f2c 0,#fa362a 100%) !important;
         border: unset;
     }
@@ -988,6 +988,29 @@ EOT;
         max-width: 556.2px;
     }
     
+    .guide-section:first-child .guide-item .thumb {
+        display: none;
+    }
+    
+    /* .yt-card .yt-uix-button-expander::before {
+        content: '__________________________';
+        position: absolute;
+        top: 16.9rem;
+        left: 7.6rem;
+    }
+    
+    .yt-card .yt-uix-button-expander::after {
+        content: '__________________________';
+        position: absolute;
+        top: 16.9rem;
+        right: 34.2rem;
+    }
+    
+    .yt-card .yt-uix-button-expander::before,
+    .yt-card .yt-uix-button-expander::after {
+        color: #aaa;
+    } */
+    
     #yt-masthead .yt-masthead-logo-container {
         width: 189px;
     }
@@ -1209,10 +1232,22 @@ EOT;
         height: 0px;
         margin-top: -8px;
     }
+    
     #appbar-guide-button[aria-expanded="true"] {
-        margin-left: 127px;
-        margin-right: -149px;
+        position: absolute;
+        top: 5.8rem;
+        left: 7.1rem;
     }
+    
+    #appbar-guide-button[aria-expanded="false"] {
+        position: absolute;
+        top: 5.8rem;
+    }
+    
+    #yt-masthead #logo-container {
+        margin-left: 1.4rem;
+    }
+    
     #masthead-appbar {
         background-color: #f1f1f100;
         border-bottom: 0px solid #e8e8e8;
@@ -1961,6 +1996,10 @@ EOT;
 
         #watch8-secondary-actions {
             left: 655px !important;
+        }
+        
+        #upload-btn {
+            right: 66.5rem;
         }
     }
     
