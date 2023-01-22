@@ -164,7 +164,7 @@ Requires Rehike to function as this was built on YouTube's Hitchhiker layout, wh
     }
     .yt-uix-button-subscribe-branded, .yt-uix-button.yt-uix-button-subscribed-branded {
         padding: 0 8px 0 5.5px;
-      height: 25px;
+        height: 26px !important;
         border: 1px solid #ccc;
     }
     .yt-uix-button-subscribe-branded .yt-uix-button-content, .yt-uix-button-subscribed-branded .yt-uix-button-content {
