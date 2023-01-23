@@ -1175,7 +1175,7 @@ EOT;
     }
     
    #appbar-guide-menu {
-         /* position: absolute; */
+        position: absolute;
         z-index: 10;
     }
 
@@ -1236,16 +1236,16 @@ EOT;
     #appbar-guide-button[aria-expanded="true"] {
         position: absolute;
         top: 5.8rem;
-        left: 7.1rem;
+        left: 7.1rem !important;
     }
     
-    #appbar-guide-button[aria-expanded="false"] {
+    #appbar-guide-button {
         position: absolute;
         top: 5.8rem;
     }
     
     #yt-masthead #logo-container {
-        margin-left: 1.4rem;
+        margin-left: 1.4rem !important;
     }
     
     #masthead-appbar {
