@@ -4,6 +4,8 @@ Makes YouTube's layout look like what it was between December 2012 and February 
 
 Requires [Rehike](https://github.com/Rehike/Rehike/tree/master) by the way.
 
+[Install it here!](https://github.com/Yaasir-AS/YouTube-2012-to-2014-Theme/raw/main/YouTube2012-2014Theme.user.css)
+
 ## Some Images to give you an idea
 
 ### Eras
