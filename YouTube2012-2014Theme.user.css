@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.2.3.1
+@version        1.2.4
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
@@ -470,14 +470,14 @@ EOT;
 }
 
 #watch-header .action-panel-trigger-transcript::before {
-	background: no-repeat url(//web.archive.org/web/20131031041028im_/http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -47px -323px !important;
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -47px -323px !important;
 	background-size: auto !important;
 	width: 18px !important;
 	height: 18px !important;
 }
 
 #watch-header .action-panel-trigger-report::before {
-	background: no-repeat url(//web.archive.org/web/20131031041028im_/http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -54px -1255px !important;
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -54px -1255px !important;
 	background-size: auto !important;
 	width: 18px !important;
 	height: 18px !important;
@@ -561,14 +561,14 @@ EOT;
 }
 
 .action-panel-trigger-transcript::before {
-	background: no-repeat url(//web.archive.org/web/20131031041028im_/http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -47px -323px;
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -47px -323px;
 	background-size: auto;
 	width: 18px;
 	height: 18px;
 }
 
 .action-panel-trigger-report::before {
-	background: no-repeat url(//web.archive.org/web/20131031041028im_/http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -54px -1255px;
+	background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflZwu7FW.png) -54px -1255px;
 	background-size: auto;
 	width: 18px;
 	height: 18px;
@@ -1534,6 +1534,63 @@ EOT;
         font-size: 13px !important;
         color: #438bc5;
     }
+    
+    /* Playlists */
+    
+        /* Text Content */
+
+            #player-playlist .playlist-video h4 {
+                color: #fff;
+                font-size: 13px;
+                font-weight: bold;
+                background: none !important;
+            }
+
+            #player-playlist .video-uploader-byline {
+                color: #666;
+                font-size: 11px;
+
+            }
+
+            li.currently-playing div.playlist-video-description span.video-uploader-byline {
+                color: #fff !important;
+            }
+
+        /* List */
+
+            li.currently-playing:hover {
+                background-color: #353535 !important;
+                border-color: #353535 !important;
+            }
+
+            #player-playlist .playlist-videos-list  li {
+                text-shadow: 0 1px 0px black;
+                border-bottom: 1px solid #1D1D1D;
+                border-top: 1px solid #393939;
+                background-color: #2b2b2b;
+            }
+
+            #player-playlist .playlist-videos-list li:hover {
+                background-color: #353535 !important;
+                border-color: #353535;
+            }
+
+            #player-playlist :not(.watch-queue-nav) .playlist-videos-list li.currently-playing .index {
+                color: #fff;
+                font-size: 11px;
+            }
+
+            li.currently-playing {
+                background-color: #4f4f4f !important;
+                border-color: #4f4f4f !important;
+                opacity: 1;
+            }
+
+        /* Thumbnail */
+
+            #player-playlist .playlist-video .video-thumb {
+                box-shadow: 0 2px 4px #00000080;
+            }
 }
 
 @-moz-document url("https://www.youtube.com/premium") {
