@@ -1149,34 +1149,34 @@ EOT;
     /* Like and dislike buttons*\/
     
     .like-button-renderer-like-button::after {
-        border: solid 1px;
-        border-color: #474747 #2b2b2b #000;
-        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) 3px -590px, linear-gradient(-180deg, #474747 0%, #2B2B2B 100%);
-        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%);
+        border: solid 1px !important;
+        border-color: #474747 #2b2b2b #000 !important;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) 3px -590px, linear-gradient(-180deg, #474747 0%, #2B2B2B 100%) !important;
+        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%) !important;
         color: #a2a2a2 !important;
         
     }
     
     .like-button-renderer-dislike-button::after {
-        border: solid 1px;
-        border-color: #474747 #2b2b2b #000;
-        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) -89px -719px, linear-gradient(-180deg, #474747 0%, #2B2B2B 100%);
-        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%);
+        border: solid 1px !important;
+        border-color: #474747 #2b2b2b #000 !important;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) -89px -719px, linear-gradient(-180deg, #474747 0%, #2B2B2B 100%) !important;
+        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%) !important;
     }
     
     .like-button-renderer-like-button:hover::after {
-        border: solid 1px;
-        border-color: #666;
-        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666;
-        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) 3px -590px, #333;
+        border: solid 1px !important ;
+        border-color: #666 !important;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666 !important;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) 3px -590px, #333 !important;
         
     }
     
     .like-button-renderer-dislike-button:hover::after {
-        border: solid 1px;
-        border-color: #666;
-        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666;
-        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) -89px -719px, #333;
+        border: solid 1px !important;
+        border-color: #666 !important;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666 !important;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) -89px -719px, #333 !important;
         
     }
     
