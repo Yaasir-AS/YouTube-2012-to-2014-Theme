@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.2.4
+@version        1.3
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
@@ -12,7 +12,7 @@ Requires Rehike to function as this was built on YouTube's Hitchhiker layout, wh
 0 "December 2012 to July 2013 (Gradient heavy, different subscribe button)*" <<<EOT
 
     #yt-masthead #logo-container .logo {
-        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png);
         background-size: auto !important;
         background-position: -20px -234px !important;
         width: 76px !important;
@@ -198,7 +198,7 @@ EOT;
 1 "July 2013 to January 2014 (No gradients, red subscribe button)" <<<EOT
 
        #yt-masthead #logo-container .logo {
-        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png) !important;
+        background: no-repeat url(http://s.ytimg.com/yts/imgbin/www-hitchhiker-vflnwbFUF.png);
         background-size: auto !important;
         background-position: -20px -234px !important;
         width: 76px !important;
@@ -324,7 +324,7 @@ EOT;
 2 "January to Feburary 2014 (Same as July 2013, but with 2013 logo instead)" <<<EOT
 
         #yt-masthead #logo-container .logo {
-        background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxkQak9.png) 0 -304px !important;
+        background: no-repeat url(https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflxkQak9.png) 0 -304px;
         background-size: auto !important;
         width: 79px !important;
     }
@@ -446,6 +446,7 @@ EOT;
     }
 EOT;
 }
+
 @advanced dropdown breakout2012or2013 "Break out the '#action-panel-overflow-menu'" {
 0 "Disabled*" <<<EOT
 #watch8-secondary-actions {
@@ -980,6 +981,292 @@ a.yt-uix-button-epic-nav-item:hover {
 EOT;
 }
 
+@advanced dropdown dark_mode "Dark Mode (W.I.P - Based on the Earth Hour 2012 Dark Theme)" {
+0 "Disabled*" <<<EOT
+EOT;
+
+1 "Enabled" <<<EOT
+
+    /* Logo *\/
+    
+    #yt-masthead #logo-container .logo {
+        background: url("http://s.ytimg.com/yt/imgbin/www-refresh-vflmpZ5kj.png") !important;
+        background-size: 183px !important;
+        background-position: -110px 0px !important;
+        height: 29px;
+        width: 72px !important;
+    }
+    
+    #footer-logo .footer-logo-icon{
+        background: url("http://s.ytimg.com/yt/imgbin/www-refresh-vflmpZ5kj.png") !important;
+        background-size: 183px !important;
+        background-position: -110px 0px !important;
+        height: 29px;
+        width: 72px !important;
+    }
+    
+    body {
+        background-image: url(http://s.ytimg.com/yt/img/earthhour/www-refreshbg-vflQx0YnW.png);
+        color: #ddd !important;
+    }
+    #watch7-sidebar-contents {
+        background: unset;
+        
+    }
+    .title {
+        color: #666 !important;
+    }
+    
+    .yt-card {
+        background: #2b2b2b;
+        border-color: #474747;
+        color: #ddd
+    }
+    
+    .branded-page-v2-top-row,
+    .branded-page-v2-primary-col .branded-page-box, 
+    .section-list li .item-section .branded-page-box,
+    .branded-page-v2-top-row #channel-subheader,
+    #c4-header-bg-container,
+    .guide-pinned .guide-pinning-enabled #appbar-guide-menu,
+    .branded-page-v2-primary-col .branded-page-box:last-child.video-player-view-component {
+        border-color: #474747;
+    }
+    
+    .yt-user-info a {
+        color: #ddd !important;
+    }
+    
+    #yt-masthead-container {
+        background: #2b2b2b;
+        border-color: #474747;
+    }
+    
+    .yt-uix-button-default, 
+    #search-btn, 
+    #yt-masthead-creation-button, 
+    #yt-masthead-creation-button::after {
+        background-color: #454545;
+        background-image: linear-gradient(180deg, #474747 0%, #2B2B2B 100%);
+        border-color: #474747 #2b2b2b #000;
+        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%);
+        color: #ddd;
+    }
+    
+    .yt-uix-button-default:hover, 
+    #search-btn:hover, 
+    #yt-masthead-creation-button:hover,
+    #yt-masthead-creation-button:hover::after{
+        background: #333 !important;
+        border-color: #666;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666;
+        color: #ddd;
+    }
+    
+    .yt-uix-button-default:active, 
+    #search-btn:active, 
+    #yt-masthead-creation-button:active,
+    #yt-masthead-creation-button:active:after{
+        background-color: #333 !important;
+        background-image: linear-gradient(-180deg, #474747 0%, #2B2B2B 100%);
+        border-color: #666;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666;
+        color: #ddd;
+    }
+    
+    .search-header .yt-uix-button-content {
+        color: #ddd;
+    }
+    
+    #masthead-search .search-btn-component .yt-uix-button-content {
+        filter:invert(100);
+    }
+    
+    #masthead-search-terms, 
+    .masthead-search-terms-border {
+        background-color: #898989;
+        border-color: #474747;
+        box-shadow: inset 0px 1px 2px #333;
+    }
+    
+    .yt-uix-button-arrow {
+        border-top-color: #ddd;
+    }
+    
+    .yt-horizontal-rule {
+        border-top: 1px solid #474747;
+    }
+    
+    .yt-ui-ellipsis {
+        background-color: #fff0;
+    }
+    
+    #results .section-list li .item-section .branded-page-box {
+        border: 1px solid #474747;
+        margin-top: -1px;
+    }
+    
+    /* Channel Picker *\/
+    
+    .yt-masthead-picker-footer {
+        background: #2b2b2b;
+    }
+    
+    .yt-uix-clickcard-card-border, .yt-uix-hovercard-card-border {
+        background: #2b2b2b;
+    }
+    
+    .yt-masthead-account-picker-option {
+        background: #4b4b4b;
+    }
+    
+    .yt-masthead-account-picker-option:hover {
+        background: #606060;
+    }
+
+    /* Action buttons *\/
+    
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.pause-resume-autoplay.action-panel-trigger.action-panel-trigger-share.yt-uix-tooltip:hover {
+        color: #a2a2a2 !important;
+    }
+    
+    button.yt-uix-button.yt-uix-button-size-default.yt-uix-button-opacity.yt-uix-button-has-icon.no-icon-markup.yt-uix-videoactionmenu-button.addto-button.pause-resume-autoplay.yt-uix-menu-trigger.yt-uix-tooltip:hover {
+        color: #a2a2a2 !important;
+    }
+    
+    #watch-header #watch8-secondary-actions::before {
+        color: #a2a2a2 !important;
+    }
+    
+    #watch8-secondary-actions button {
+        color: #a2a2a2;
+    }
+    
+    .yt-ui-menu-item.has-icon::before {
+        filter: invert(50);
+    }
+    
+    /* Like and dislike buttons*\/
+    
+    .like-button-renderer-like-button::after {
+        border: solid 1px;
+        border-color: #474747 #2b2b2b #000;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) 3px -590px, linear-gradient(-180deg, #474747 0%, #2B2B2B 100%);
+        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%);
+        color: #a2a2a2 !important;
+        
+    }
+    
+    .like-button-renderer-dislike-button::after {
+        border: solid 1px;
+        border-color: #474747 #2b2b2b #000;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) -89px -719px, linear-gradient(-180deg, #474747 0%, #2B2B2B 100%);
+        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%);
+    }
+    
+    .like-button-renderer-like-button:hover::after {
+        border: solid 1px;
+        border-color: #666;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) 3px -590px, #333;
+        
+    }
+    
+    .like-button-renderer-dislike-button:hover::after {
+        border: solid 1px;
+        border-color: #666;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666;
+        background: no-repeat url(https://i.imgur.com/DjSxY9d.png) -89px -719px, #333;
+        
+    }
+    
+    /* Text and Comment Box *\/
+    
+    .arrow-inner {
+        display: none;
+    }
+    
+    #watch-description,
+    #watch7-sidebar .watch-sidebar-head,
+    .guide-item,
+    .comment-renderer-reply {
+        color: #a2a2a2;
+    }
+    
+    span[role="radiogroup"] {
+        filter: invert(50);
+    }
+    
+    .comment-simplebox-renderer-collapsed-content {
+        border: 1px solid #474747;
+        color: #ddd;
+    }
+    .comment-section-header-renderer {
+        color: #ddd;
+    }
+    
+    .comment-simplebox-renderer {
+        border-color: #474747;
+    }
+    
+    .branded-page-module-title-text,
+    .branded-page-header-title-link {
+        color: #ddd !important;
+    }
+    
+    .description {
+        background: none;
+    }
+
+    .branded-page-module-title {
+        color: #ddd;
+    }
+
+    .branded-page-related-channels h3 a {
+        color: #ddd;
+    }
+    
+    /* Expander *\/
+    
+    .yt-card .yt-uix-button-expander {
+        color: #ddd;
+        background: linear-gradient(-180deg, #474747 0%, #2B2B2B 100%);
+        border-color: #474747 #2b2b2b #000;
+        box-shadow: inset 0 1px 0 rgb(255 255 255 / 45%);
+    }
+    
+    .yt-card .yt-uix-button-expander:hover {
+        color: #ddd;
+        background: #333 !important;
+        border-color: #666;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.25), inset 0px 0px 3px #666;
+    }
+    
+    /* Arrows *\/
+    
+    .compact-shelf .yt-uix-button-shelf-slider-pager {
+        background: #2b2b2b;
+    }
+    
+    /* Footer *\/
+    
+    body #footer-container {
+        margin-top: -145px;
+        background-color: #2b2b2b;
+        border-top: 1px solid #474747;
+    }
+    
+    #footer-links-primary a {
+        color: #ddd;
+    }
+    
+    #footer-main {
+        border-bottom: 1px solid #474747;
+    }
+
+EOT;
+}
+
 }
 
 ==/UserStyle== */
@@ -1491,6 +1778,10 @@ EOT;
 } 
 */
     /*[[December_2012_to_July_2013-July_2013_to_Feburary_2014]]*/
+    
+    /*[[dark_mode]]*/
+    
+    
     
     
         /* Shelf Arrows */
@@ -2066,5 +2357,17 @@ EOT;
         z-index: 100000000;
         width: 40rem;
         border-top: 1px solid #eee;
+    }
+}
+
+@-moz-document url(https://www.youtube.com/rehike/config/advanced), url("https://www.youtube.com/rehike/config/appearance"){
+    #content {
+        position: relative;
+        top: 0px;
+        left: -10px;
+    }
+    
+    #appbar-guide-button {
+        visibility: hidden;
     }
 }
