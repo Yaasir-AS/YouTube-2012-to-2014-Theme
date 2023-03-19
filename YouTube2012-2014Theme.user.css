@@ -152,6 +152,22 @@ EOT;
     .video-player-view-component .view-count .count {
         color: #ddd;
     }
+
+    .watch-view-count {
+        color: #ddd;
+    }
+
+    #watch8-sentiment-actions .like-button-renderer .yt-uix-button {
+        color: #ddd;
+    }
+
+    .like-button-renderer-like-button::before {
+        filter: invert(100);
+    }
+
+    .like-button-renderer-dislike-button::before {
+        filter: invert(100);
+    }
     
     /* Channel Picker *\/
     
