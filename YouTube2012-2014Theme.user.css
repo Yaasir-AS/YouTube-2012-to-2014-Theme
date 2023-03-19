@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube Late 2012-Early 2014 Theme
 @namespace      github.com/openstyles/stylus
-@version        1.3.1
+@version        1.3.1_01
 @description    `Makes YouTube look like it did in late-2012
 
 Requires Rehike to function as this was built on YouTube's Hitchhiker layout, which is no longer exists... officially at least`
@@ -30,6 +30,13 @@ EOT;
         background-position: -110px 0px !important;
         height: 29px;
         width: 72px !important;
+    }
+
+    /* Buttons and whatnot *\/
+
+    #comment-section-renderer .sprite-comment-actions {
+        background: none !important;
+        box-shadow: none !important;
     }
     
     body {
